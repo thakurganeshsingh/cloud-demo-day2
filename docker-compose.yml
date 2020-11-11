@@ -1,0 +1,11 @@
+version: "3"
+services:
+  techdemo-local:
+    build: . 
+    image: techdemo
+    expose:
+      - 8080
+    image: techdemo:latest
+    ports:
+      - 8080:8080
+    restart: on-failure
